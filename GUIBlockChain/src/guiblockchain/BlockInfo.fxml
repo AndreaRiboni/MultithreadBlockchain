@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="296.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiblockchain.BlockInfoController">
+   <children>
+      <Rectangle arcHeight="8.0" arcWidth="8.0" fill="#8080ff2a" height="515.0" layoutX="11.0" layoutY="71.0" stroke="TRANSPARENT" strokeType="INSIDE" width="271.0" />
+      <Label layoutX="24.0" layoutY="25.0" text="INFORMAZIONI DEL BLOCCO">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="129.0" layoutY="78.0" text="Hash" />
+      <TextArea fx:id="hash" editable="false" layoutX="22.0" layoutY="99.0" prefHeight="39.0" prefWidth="248.0" promptText="Hash non disponibile">
+         <font>
+            <Font size="10.0" />
+         </font></TextArea>
+      <TextArea fx:id="hashprec" editable="false" layoutX="24.0" layoutY="180.0" prefHeight="39.0" prefWidth="248.0" promptText="Hash precedente non disponibile">
+         <font>
+            <Font size="10.0" />
+         </font></TextArea>
+      <Label layoutX="92.0" layoutY="159.0" text="Hash Precedente" />
+      <Label layoutX="112.0" layoutY="251.0" text="Data e Ora" />
+      <TextArea fx:id="data" editable="false" layoutX="24.0" layoutY="279.0" prefHeight="39.0" prefWidth="248.0" promptText="Blocco non disponibile" />
+      <TextArea fx:id="msg" editable="false" layoutX="24.0" layoutY="354.0" prefHeight="135.0" prefWidth="248.0" promptText="Messaggio non disponibile" />
+      <Label layoutX="110.0" layoutY="333.0" text="Messaggio:" />
+      <Button layoutX="24.0" layoutY="502.0" mnemonicParsing="false" onAction="#saveBlock" text="Salva Blocco" />
+      <Button layoutX="140.0" layoutY="502.0" mnemonicParsing="false" onAction="#saveBlockchain" text="Salva Blockchain" />
+   </children>
+</AnchorPane>
